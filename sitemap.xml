@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+        <url>
+            <loc>http://www.infojornal-com.vercel.app/index.html</loc>
+            <lastmod>2005-01-27</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>1.0</priority>
+        </url>
+
+        <url>
+            <loc>http://www.infojornal-com.vercel.app/programm.html</loc>
+            <lastmod>2005-01-27</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>
+
+        <url>
+            <loc>http://www.infojornal-com.vercel.app/p1.html</loc>
+            <lastmod>2005-01-27</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+        </url>
+
+        <url>
+            <loc>http://www.infojornal-com.vercel.app/p2.html</loc>
+            <lastmod>2005-01-27</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+        </url>
+
+        <url>
+            <loc>http://www.infojornal-com.vercel.app/p3.html</loc>
+            <lastmod>2005-01-27</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+        </url>
+
+        <url>
+            <loc>http://www.infojornal-com.vercel.app/p4.html</loc>
+            <lastmod>2005-01-27</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+        </url>
+
+        <url>
+            <loc>http://www.infojornal-com.vercel.app/design.html</loc>
+            <lastmod>2005-01-27</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>
+
+        <url>
+            <loc>http://www.infojornal-com.vercel.app/d1.html</loc>
+            <lastmod>2005-01-27</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+        </url>
+
+        <url>
+            <loc>http://www.infojornal-com.vercel.app/d2.html</loc>
+            <lastmod>2005-01-27</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+        </url>
+
+        <url>
+            <loc>http://www.infojornal-com.vercel.app/d3.html</loc>
+            <lastmod>2005-01-27</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+        </url>
+
+        <url>
+            <loc>http://www.infojornal-com.vercel.app/d4.html</loc>
+            <lastmod>2005-01-27</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+        </url>
+
+        <url>
+            <loc>http://www.infojornal-com.vercel.app/marketing.html</loc>
+            <lastmod>2005-01-27</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>
+
+        <url>
+            <loc>http://www.infojornal-com.vercel.app/m1.html</loc>
+            <lastmod>2005-01-27</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+        </url>
+
+        <url>
+            <loc>http://www.infojornal-com.vercel.app/analitika.html</loc>
+            <lastmod>2005-01-27</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    </urlset>
+
+</sitemapindex>
