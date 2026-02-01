@@ -322,7 +322,134 @@ h3 {
   .cards { padding: 0 5px; }
   .hero h2 {font-size: 29px;}
 }
+.wrap {
+  padding: 20px 15px;
+  margin: 20px auto;
+}
 
+/* 🔧 МОБИЛЬНЫЕ ЭКРАНЫ */
+@media (max-width: 480px) {
+  .header-inner { 
+    padding: 12px 18px !important; 
+    border-radius: 30px;
+    gap: 16px;
+  }
+  
+  .logo a { font-size: 20px !important; }
+  
+  .hero-top { 
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: stretch !important;
+  }
+  
+  .hero-top h2 { 
+    font-size: 28px !important; 
+    text-align: center;
+    margin: 0 !important;
+  }
+  
+  .search input { 
+    width: 100% !important; 
+    padding: 14px 18px !important;
+    font-size: 16px !important;
+  }
+  
+  .hero p { 
+    font-size: 16px !important; 
+    line-height: 1.5;
+    padding: 0 5px;
+  }
+  
+  .cards { 
+    grid-template-columns: 1fr !important; 
+    gap: 18px !important; 
+    padding: 0 5px;
+  }
+  
+  .card { 
+    padding: 20px 18px !important; 
+    border-radius: 16px;
+  }
+  
+  .card h3 { 
+    font-size: 18px !important; 
+    line-height: 1.35;
+  }
+  
+  .burger span { 
+    width: 22px !important; 
+    height: 3px !important;
+  }
+  
+  .mobile-menu { 
+    top: 85px !important; 
+    right: 15px !important; 
+    padding: 25px 20px !important;
+    min-width: 280px;
+  }
+}
+
+/* 📱 СВЕРХМАЛЕНЬКИЕ 320-360px */
+@media (max-width: 360px) {
+  .wrap { padding: 15px 10px !important; }
+  
+  .header-inner { 
+    padding: 10px 15px !important; 
+    border-radius: 25px;
+  }
+  
+  .logo a { font-size: 18px !important; }
+  
+  .hero-top h2 { font-size: 24px !important; }
+  
+  .hero p { font-size: 15px !important; }
+  
+  .card { padding: 18px 15px !important; }
+  
+  .card h3 { font-size: 16px !important; }
+  
+  .cards { gap: 15px !important; }
+  
+  .mobile-menu { 
+    right: 10px !important; 
+    padding: 20px 16px !important;
+    min-width: 260px;
+  }
+}
+
+/* 💻 ТАБЛЕТКИ */
+@media (min-width: 481px) and (max-width: 1023px) {
+  .cards { 
+    grid-template-columns: repeat(2, 1fr) !important; 
+    gap: 25px;
+  }
+  
+  .hero-top h2 { font-size: 34px; }
+  
+  .header-inner { padding: 15px 28px; }
+}
+
+/* 🖥️ ДЕСКТОП */
+@media (min-width: 1024px) {
+  .wrap { padding: 40px 20px; }
+  .header-inner { padding: 18px 40px; }
+  .cards { gap: 35px; }
+}
+
+/* 🎯 БУРГЕР МЕНЮ */
+@media (max-width: 767px) {
+  nav.desktop-nav { display: none !important; }
+  .burger { display: flex !important; }
+}
+
+.mobile-menu a { 
+  padding: 12px 0 !important; 
+  font-size: 16px !important;
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-menu a:last-child { border-bottom: none; }
 </style>
 </head>
 
