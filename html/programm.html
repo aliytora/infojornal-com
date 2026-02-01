@@ -288,44 +288,7 @@ h3 {
   font-size: 16px;
 }
 
-@media (max-width: 1023px) {
-  .header-inner { padding: 12px 24px; }
-  .hero-top h1 { font-size: 36px; }
-  .cards { grid-template-columns: repeat(2, 1fr); gap: 20px; }
-}
 
-@media (max-width: 767px) {
-  nav.desktop-nav { display: none; }
-  .burger { display: flex; }
-  .hero-top { 
-    flex-direction: column; 
-    align-items: flex-start; 
-    h1 { font-size: 30px; }
-  }
-  .search { width: 100%; margin-top: 15px; }
-  .search input { width: 100%; }
-  .cards { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 480px) {
-  .header-inner { padding: 10px 15px; }
-  .hero-top h1 { font-size: 24px; line-height: 1.2; }
-  .hero-top p { font-size: 15px; }
-  .cards { gap: 15px; padding: 0 10px; }
-  .search input { padding: 12px 15px; font-size: 16px; }
-  .burger span { width: 20px; height: 2px; }
-}
-
-@media (max-width: 360px) {
-  .header-inner { padding: 8px 12px; }
-  .hero-top h1 { font-size: 20px; }
-  .cards { padding: 0 5px; }
-  .hero h2 {font-size: 29px;}
-}
-.wrap {
-  padding: 20px 15px;
-  margin: 20px auto;
-}
 
 /* 🔧 МОБИЛЬНЫЕ ЭКРАНЫ */
 @media (max-width: 480px) {
@@ -347,6 +310,7 @@ h3 {
     font-size: 28px !important; 
     text-align: center;
     margin: 0 !important;
+    text-align: left !important; /* ← ВОТ ЭТО */
   }
   
   .search input { 
