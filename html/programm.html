@@ -36,16 +36,9 @@
 }
 
 html, body {
-    width: 100vw;
-    overflow-x: hidden;
+  width: 100%;
+  min-height: 100%;
 }
-
-.wrap {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
 
 body {
   font-family: Geologica_Cursive-Light;
@@ -126,11 +119,20 @@ h3 {
   font-family: Montserrat-Regular;
 }
 
+.wrap {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  flex: 1;
+}
 
-
-.hero-top { width: 100vw; padding: 0 15px; box-sizing: border-box; }
-.search { width: 100vw; padding: 0 15px; box-sizing: border-box; }
-
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
 
 .hero-top h1 {
   font-size: 42px;
