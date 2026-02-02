@@ -36,9 +36,16 @@
 }
 
 html, body {
-  width: 100%;
-  min-height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
 }
+
+.wrap {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 
 body {
   font-family: Geologica_Cursive-Light;
@@ -119,12 +126,7 @@ h3 {
   font-family: Montserrat-Regular;
 }
 
-.wrap {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
-  flex: 1;
-}
+
 
 .hero-top {
   display: flex;
@@ -293,7 +295,7 @@ h3 {
 
 @media (max-width: 1023px) {
     .header-inner { padding: 12px 24px; }
-    .hero-top h2 { font-size: 38px; line-height: 1.2; } /* Больше! */
+    .hero-top h2 { font-size: 38px; line-height: 1.2; }
     .cards { gap: 20px; }
 }
 
@@ -302,14 +304,26 @@ h3 {
     .burger { display: flex; }
     .hero-top { 
         flex-direction: column; 
-        align-items: flex-start; 
+        align-items: stretch;
         gap: 15px;
+        width: 100vw;
+        padding: 0 15px;
+        box-sizing: border-box;
     }
     .hero-top h2 { 
-        font-size: 34px; /* Было 30px → 34px */
-        line-height: 1.1; /* Переносит на 2 строки */
+        font-size: 34px;
+        line-height: 1.15;
+        hyphens: auto;
+        overflow-wrap: break-word;
+        margin: 0;
+        width: 100%;
     }
-    .search { width: 100%; margin-top: 15px; }
+    .search { 
+        width: 100vw; 
+        margin-top: 15px; 
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
     .search input { width: 100%; }
     .cards { grid-template-columns: 1fr; gap: 25px; }
 }
@@ -317,26 +331,29 @@ h3 {
 @media (max-width: 480px) {
     .header-inner { padding: 10px 15px; }
     .hero-top h2 { 
-        font-size: 38px; /* Было 24px → 28px */
-        line-height: 1.2; /* Переносит длинные слова */
+        font-size: 38px; /* ← Как в аналитике! */
+        line-height: 1.1;
+        hyphens: auto;
+        overflow-wrap: break-word;
+        margin: 0;
     }
     .hero p { font-size: 16px; }
     .cards { gap: 20px; }
     .search input { padding: 14px 16px; font-size: 16px; }
     .burger span { width: 20px; height: 2px; }
+    .wrap, .hero-top, .search { padding: 0 10px; }
 }
 
 @media (max-width: 360px) {
     .header-inner { padding: 8px 12px; }
     .hero-top h2 { 
-        font-size: 32px; /* Было 22px → 26px */
+        font-size: 32px;
         line-height: 1.15;
-        word-break: break-word; /* Переносит буквы при необходимости */
+        hyphens: auto;
+        overflow-wrap: break-word;
     }
-    .wrap { padding: 0 10px; }
+    .wrap { padding: 0 8px; }
 }
-
-
 
 </style>
 </head>
