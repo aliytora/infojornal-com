@@ -312,7 +312,16 @@ h3 {
 
 @media (max-width: 480px) {
     .header-inner { padding: 10px 15px; }
-    .hero-top h2 { font-size: 39px !important; line-height: 1.2; }  /* ← Было 24px */
+    .hero-top h2 { 
+        font-size: 39px !important; 
+        line-height: 1.1; 
+        word-break: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
     .hero p { font-size: 15px; }
     .cards { gap: 15px; padding: 0 10px; }
     .search input { padding: 12px 15px; font-size: 16px; }
@@ -321,7 +330,7 @@ h3 {
 
 @media (max-width: 360px) {
     .header-inner { padding: 8px 12px; }
-    .hero-top h2 { font-size: 32px !important; }  /* ← Было 20px */
+    .hero-top h2 { font-size: 28px !important; }  /* ← Было 20px */
     .cards { padding: 0 5px; }
 }
 
