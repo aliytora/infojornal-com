@@ -306,7 +306,6 @@ h3 {
         gap: 15px;
         width: 100%;
         padding: 0 15px;
-        box-sizing: border-box;
     }
     .hero-top h2 { 
         font-size: 34px;
@@ -317,14 +316,13 @@ h3 {
         width: 100%;
     }
     .search { 
-        width: 100%;
-        max-width: 350px;        /* ← КОРОТКИЙ */
-        margin: 15px auto 0;     /* ← ЦЕНТРИРОВАН */
-        padding: 0;
+        width: 100%;           /* ← НА ВСЮ ШИРИНУ */
+        margin-top: 15px;      /* ← Без центрирования */
+        padding: 0 15px;       /* ← Отступы по краям */
     }
     .search input { 
         width: 100%; 
-        max-width: 100%;
+        box-sizing: border-box;
     }
     .cards { 
         grid-template-columns: 1fr; 
@@ -335,7 +333,7 @@ h3 {
 @media (max-width: 480px) {
     .header-inner { padding: 10px 15px; }
     .hero-top h2 { 
-        font-size: 38px;         /* ← Как в аналитике */
+        font-size: 38px;
         line-height: 1.1;
         hyphens: auto;
         overflow-wrap: break-word;
@@ -344,17 +342,13 @@ h3 {
     .hero p { font-size: 16px; }
     .cards { gap: 20px; }
     .search { 
-        max-width: 300px;        /* ← Еще короче */
-        margin: 15px auto 0;
+        padding: 0 10px;       /* ← Меньше отступы */
     }
     .search input { 
         padding: 14px 16px; 
         font-size: 16px; 
     }
-    .burger span { 
-        width: 20px; 
-        height: 2px; 
-    }
+    .burger span { width: 20px; height: 2px; }
     .wrap { padding: 0 12px; }
 }
 
@@ -366,9 +360,10 @@ h3 {
         hyphens: auto;
         overflow-wrap: break-word;
     }
-    .search { max-width: 280px; }
+    .search { padding: 0 8px; }
     .wrap { padding: 0 10px; }
 }
+
 
 </style>
 </head>
