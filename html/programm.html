@@ -293,75 +293,29 @@ h3 {
 
 @media (max-width: 1023px) {
     .header-inner { padding: 12px 24px; }
-    .hero-top h2 { font-size: 38px; line-height: 1.2; }
-    .cards { gap: 20px; }
+    .hero-top h2 { font-size: 36px; }
 }
 
 @media (max-width: 767px) {
     nav.desktop-nav { display: none; }
     .burger { display: flex; }
     .hero-top { 
-        flex-direction: column; 
-        align-items: stretch;
-        gap: 15px;
-        width: 100%;
-        padding: 0 15px;
+        flex-direction: column !important; 
+        align-items: flex-start !important; 
     }
-    .hero-top h2 { 
-        font-size: 34px;
-        line-height: 1.15;
-        hyphens: auto;
-        overflow-wrap: break-word;
-        margin: 0;
-        width: 100%;
-    }
+    .hero-top h2 { font-size: 30px; }
     .search { 
-        width: 100%;           /* ← НА ВСЮ ШИРИНУ */
-        margin-top: 15px;      /* ← Без центрирования */
-        padding: 0 15px;       /* ← Отступы по краям */
-    }
-    .search input { 
         width: 100%; 
-        box-sizing: border-box;
+        margin-top: 15px; 
     }
-    .cards { 
-        grid-template-columns: 1fr; 
-        gap: 25px; 
-    }
+    .search input { width: 100%; }
+    .cards { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 480px) {
     .header-inner { padding: 10px 15px; }
-    .hero-top h2 { 
-        font-size: 38px;
-        line-height: 1.1;
-        hyphens: auto;
-        overflow-wrap: break-word;
-        margin: 0;
-    }
-    .hero p { font-size: 16px; }
-    .cards { gap: 20px; }
-    .search { 
-        padding: 0 10px;       /* ← Меньше отступы */
-    }
-    .search input { 
-        padding: 14px 16px; 
-        font-size: 16px; 
-    }
-    .burger span { width: 20px; height: 2px; }
-    .wrap { padding: 0 12px; }
-}
-
-@media (max-width: 360px) {
-    .header-inner { padding: 8px 12px; }
-    .hero-top h2 { 
-        font-size: 32px;
-        line-height: 1.15;
-        hyphens: auto;
-        overflow-wrap: break-word;
-    }
-    .search { padding: 0 8px; }
-    .wrap { padding: 0 10px; }
+    .hero-top h1 { font-size: 24px; line-height: 1.2; }
+    .search input { padding: 12px 15px; font-size: 16px; }
 }
 
 
@@ -399,12 +353,12 @@ h3 {
 
 <main class="wrap">
 <section class="hero">
-  <div class="hero-top">
+<div class="hero-top">
     <h2>Программирование</h2>
     <div class="search">
-      <input type="text" id="searchInput" placeholder="Что ищете?">
+        <input type="text" id="searchInput" placeholder="Что ищете?">
     </div>
-  </div>
+</div>
   <p>Статьи о дизайне: чем отличаются графические и коммуникационные дизайнеры от дизайнеров интерфейсов, что такое UX и UI, где лучше создавать макеты и другие полезные советы. Истории выпускников о том, как они делали первые проекты, собирали портфолио и искали работу. Материалы о том, как мы учим создавать изображения и интерфейсы.</p>
 </section>
 
