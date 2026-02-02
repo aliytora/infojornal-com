@@ -1,3 +1,13 @@
 User-agent: *
 Allow: /
+Clean-Param: /?variant_id $;order $;filter $;q $
+
+User-agent: Yandex
+Allow: /
+Clean-Param: /?utm_campaign $;utm_source $;utm_medium $
+
+User-agent: Googlebot
+Allow: /
+
 Sitemap: https://infojornal-com.vercel.app/sitemap.xml
+Host: infojurnal.com
