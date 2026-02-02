@@ -45,7 +45,8 @@ body {
   background: #fafafa;
   color: #111;
   line-height: 1.6;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -250,6 +251,8 @@ h3 {
   color: #666;
 }
 
+
+
 .burger {
   display: none;
   flex-direction: column;
@@ -289,131 +292,41 @@ h3 {
 }
 
 
-
-/* 🔧 МОБИЛЬНЫЕ ЭКРАНЫ */
-@media (max-width: 480px) {
-  .header-inner { 
-    padding: 12px 18px !important; 
-    border-radius: 30px;
-    gap: 16px;
-  }
-  
-  .logo a { font-size: 20px !important; }
-  
-  .hero-top { 
-    flex-direction: column !important;
-    gap: 20px !important;
-    align-items: stretch !important;
-  }
-  
-  .hero-top h2 { 
-    font-size: 28px !important; 
-    text-align: center;
-    margin: 0 !important;
-    text-align: left !important; /* ← ВОТ ЭТО */
-  }
-  
-  .search input { 
-    width: 100% !important; 
-    padding: 14px 18px !important;
-    font-size: 16px !important;
-  }
-  
-  .hero p { 
-    font-size: 16px !important; 
-    line-height: 1.5;
-    padding: 0 5px;
-  }
-  
-  .cards { 
-    grid-template-columns: 1fr !important; 
-    gap: 18px !important; 
-    padding: 0 5px;
-  }
-  
-  .card { 
-    padding: 20px 18px !important; 
-    border-radius: 16px;
-  }
-  
-  .card h3 { 
-    font-size: 18px !important; 
-    line-height: 1.35;
-  }
-  
-  .burger span { 
-    width: 22px !important; 
-    height: 3px !important;
-  }
-  
-  .mobile-menu { 
-    top: 85px !important; 
-    right: 15px !important; 
-    padding: 25px 20px !important;
-    min-width: 280px;
-  }
+@media (max-width: 1023px) {
+  .header-inner { padding: 12px 24px; }
+  .hero-top h1 { font-size: 36px; }
+  .cards { grid-template-columns: repeat(2, 1fr); gap: 20px; }
 }
 
-/* 📱 СВЕРХМАЛЕНЬКИЕ 320-360px */
-@media (max-width: 360px) {
-  .wrap { padding: 15px 10px !important; }
-  
-  .header-inner { 
-    padding: 10px 15px !important; 
-    border-radius: 25px;
-  }
-  
-  .logo a { font-size: 18px !important; }
-  
-  .hero-top h2 { font-size: 24px !important; }
-  
-  .hero p { font-size: 15px !important; }
-  
-  .card { padding: 18px 15px !important; }
-  
-  .card h3 { font-size: 16px !important; }
-  
-  .cards { gap: 15px !important; }
-  
-  .mobile-menu { 
-    right: 10px !important; 
-    padding: 20px 16px !important;
-    min-width: 260px;
-  }
-}
-
-/* 💻 ТАБЛЕТКИ */
-@media (min-width: 481px) and (max-width: 1023px) {
-  .cards { 
-    grid-template-columns: repeat(2, 1fr) !important; 
-    gap: 25px;
-  }
-  
-  .hero-top h2 { font-size: 34px; }
-  
-  .header-inner { padding: 15px 28px; }
-}
-
-/* 🖥️ ДЕСКТОП */
-@media (min-width: 1024px) {
-
-  .header-inner { padding: 18px 40px; }
-  .cards { gap: 35px; }
-}
-
-/* 🎯 БУРГЕР МЕНЮ */
 @media (max-width: 767px) {
-  nav.desktop-nav { display: none !important; }
-  .burger { display: flex !important; }
+  nav.desktop-nav { display: none; }
+  .burger { display: flex; }
+  .hero-top { 
+    flex-direction: column; 
+    align-items: flex-start; 
+    h1 { font-size: 30px; }
+  }
+  .search { width: 100%; margin-top: 15px; }
+  .search input { width: 100%; }
+  .cards { grid-template-columns: 1fr; }
 }
 
-.mobile-menu a { 
-  padding: 12px 0 !important; 
-  font-size: 16px !important;
-  border-bottom: 1px solid #eee;
+@media (max-width: 480px) {
+  .header-inner { padding: 10px 15px; }
+  .hero-top h1 { font-size: 24px; line-height: 1.2; }
+  .hero-top p { font-size: 15px; }
+  .cards { gap: 15px; padding: 0 10px; }
+  .search input { padding: 12px 15px; font-size: 16px; }
+  .burger span { width: 20px; height: 2px; }
 }
 
-.mobile-menu a:last-child { border-bottom: none; }
+@media (max-width: 360px) {
+  .header-inner { padding: 8px 12px; }
+  .hero-top h1 { font-size: 20px; }
+  .cards { padding: 0 5px; }
+  .hero h2 {font-size: 29px;}
+}
+
 </style>
 </head>
 
