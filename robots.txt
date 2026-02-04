@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Clean-Param: variant_id&order&filter&q
 
 User-agent: Yandex
 Allow: /

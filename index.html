@@ -3,10 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="icon" href="../img/logo-icon.svg" type="image/x-icon">
+  <link rel="icon" href="./favicon.webp" type="image/x-icon">
   <title>Блог Info.Jurnal</title>
   <meta name="description" content="Статьи о направлениях цифрового мира. Поможем понять, как всё устроено и в какую сторону развиваться." />
   <meta name="keywords" content="программирование маркетинг аналитика дизайн">
+
+  <link rel="preconnect" href="https://infojornal-com.vercel.app">
+<link rel="dns-prefetch" href="https://infojornal-com.vercel.app">
+
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
@@ -24,22 +28,27 @@
 @font-face {
     font-family: 'Montserrat-Bold';
     src: url('./font/Montserrat-Bold.ttf');
+    font-display: swap; 
 }
 @font-face {
     font-family: 'Montserrat-Medium';
     src: url('./font/Montserrat-Medium.ttf');
+    font-display: swap; 
 }
 @font-face {
     font-family: 'Montserrat-Regular';
     src: url('./font/Montserrat-Regular.ttf');
+    font-display: swap; 
 }
 @font-face {
     font-family: 'Geologica_Cursive-Light';
     src: url('./font/Geologica_Cursive-Light.ttf');
+    font-display: swap; 
 }
 @font-face {
     font-family: 'Arteks Contour';
     src: url('./font/Arteks\ Contour.otf');
+    font-display: swap; 
 }
 
 :root {
@@ -54,7 +63,7 @@
 }
 
 body {
-    font-family: Geologica_Cursive-Light;
+    font-family: Geologica_Cursive-Light, system-ui, sans-serif;
     background: #fafafa;
     color: #111;
     line-height: 1.6;
@@ -916,8 +925,9 @@ nav a:hover {
         <button class="hero-button"><a href="https://vk.com/club234506227" target="_blank" rel="nofolow">Подписаться на сообщество журнала</a></button>
       </div>
       <div class="hero-image">
-        <img src="./img/girrrl.webp" alt="Девушка читает книгу" title="Info.Jurnal главная страница">
-      </div>
+        <img src="./img/girrrl.webp" alt="Девушка читает книгу" title="Info.Jurnal главная страница"
+     width="600" height="400"fetchpriority="high" loading="eager">
+    </div>
     </div>
   </section>
 
